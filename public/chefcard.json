@@ -1,0 +1,52 @@
+{
+  "chefs": [
+    {
+      "id": 1,
+      "name": "Gino D'Acampo",
+      "image": "https://i2-prod.examinerlive.co.uk/incoming/article21561033.ece/ALTERNATES/s615b/0_Gino-DAcampo.jpg",
+      "experience": 25,
+      "recipes": 80,
+      "likes": 20000
+    },
+    {
+      "id": 2,
+      "name": "Antonio Carluccio",
+      "image": "https://i.insider.com/5a0327b013ed513b4b67593a?width=1000&format=jpeg&auto=webp",
+      "experience": 45,
+      "recipes": 60,
+      "likes": 18000
+    },
+    {
+      "id": 3,
+      "name": "Giada De Laurentiis",
+      "image": "https://food.fnr.sndimg.com/content/dam/images/food/editorial/shows/g/giada-in-italy/fnk-app-show-art-giada-in-italy.jpg.rend.hgtvcom.616.462.suffix/1586943867698.jpeg",
+      "experience": 20,
+      "recipes": 70,
+      "likes": 15000
+    },
+    {
+      "id": 4,
+      "name": "Mario Batali",
+      "image": "https://cdn.britannica.com/05/206005-050-9138C8AC/Mario-Batali-American-chef-television-personality-2017.jpg",
+      "experience": 30,
+      "recipes": 50,
+      "likes": 12000
+    },
+    {
+      "id": 5,
+      "name": "Massimo Bottura",
+      "image": "https://www.foodandwine.com/thmb/7TKiLuPyH7bOiGijChLjei2JHEA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/gucci-osteria-Massimo-Bottura-VT-BLOG0220-e813072cbc0847648ccc3cecba04744f.jpg",
+      "experience": 35,
+      "recipes": 40,
+      "likes": 9000
+    },
+    {
+      "id": 6,
+      "name": "Lidia Bastianich",
+      "image": "https://www.syracuse.com/resizer/1jxY1JM0UR2Ze6hT431FbmvVPko=/800x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/KOVDPQBYMNEN5IC5CBCUJQDFWM.jpg",
+      "experience": 50,
+      "recipes": 45,
+      "likes": 8000
+    }
+  ]
+}

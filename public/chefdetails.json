@@ -1,0 +1,379 @@
+[
+  {
+    "id": 1,
+    "name": "Giada De Laurentiis",
+    "picture": "https://www.giadzy.com/wp-content/uploads/Giada-De-Laurentiis.jpg",
+    "bio": "Giada De Laurentiis is an Italian-American chef and television personality. She is the host of Food Network's Giada at Home. Her cooking style focuses on Italian cuisine and she is known for her simple and healthy recipes.",
+    "likes": 25000,
+    "num_recipes": 75,
+    "experience": 20,
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Linguine with Shrimp and Lemon Oil",
+        "ingredients": [
+          "1 pound linguine pasta",
+          "1/4 cup extra-virgin olive oil",
+          "1/4 cup lemon juice",
+          "2 cloves garlic, minced",
+          "1 pound large shrimp, peeled and deveined"
+        ],
+        "cooking_method": "Cook the linguine in salted boiling water until al dente. Meanwhile, heat the olive oil in a large skillet over medium heat. Add the garlic and cook until fragrant, about 1 minute. Add the shrimp and cook until pink and cooked through, about 2-3 minutes per side. Remove from heat and stir in the lemon juice. Drain the linguine and add to the skillet with the shrimp and lemon oil. Toss to combine and serve.",
+        "rating": 4.5,
+        "favorite": false
+      },
+      {
+        "id": 2,
+        "name": "Pesto Lasagna Roll-Ups",
+        "ingredients": [
+          "12 lasagna noodles",
+          "2 cups fresh basil leaves",
+          "1/2 cup grated Parmesan cheese",
+          "1/2 cup pine nuts",
+          "2 cloves garlic"
+        ],
+        "cooking_method": "Preheat the oven to 375°F. Cook the lasagna noodles according to package instructions. Meanwhile, in a food processor, combine the basil, Parmesan, pine nuts, and garlic. Pulse until finely chopped. Spread the pesto over each cooked lasagna noodle, then roll up tightly. Place the roll-ups seam-side down in a baking dish. Bake for 20-25 minutes, until heated through and lightly browned on top.",
+        "rating": 4.8,
+        "favorite": true
+      },
+      {
+        "id": 3,
+        "name": "Tiramisu",
+        "ingredients": [
+          "6 egg yolks",
+          "3/4 cup white sugar",
+          "2/3 cup milk",
+          "1 1/4 cups heavy cream",
+          "1/2 teaspoon vanilla extract",
+          "1 pound mascarpone cheese",
+          "1/4 cup strong brewed coffee",
+          "2 tablespoons rum",
+          "24 ladyfingers",
+          "2 tablespoons unsweetened cocoa powder"
+        ],
+        "cooking_method": "1. In a medium saucepan, whisk together egg yolks and sugar until well blended. Whisk in milk and cook over low heat, stirring constantly, until mixture thickens and coats the back of a spoon, about 10 minutes. Remove from heat and allow to cool.\n2. In a large bowl, beat cream with vanilla until stiff peaks form. Whisk mascarpone into yolk mixture until smooth.\n3. In a small bowl, combine coffee and rum. Dip each ladyfinger into coffee mixture for only 5 seconds. Place soaked ladyfingers in a single layer in a 9x13 inch dish. Spread half of the mascarpone mixture over the ladyfingers, then repeat with another layer of ladyfingers and mascarpone mixture.\n4. Cover and refrigerate for at least 2 hours or overnight. Sprinkle cocoa on top just before serving.",
+        "rating": 4.8,
+        "favorite": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Mario Batali",
+    "picture": "https://www.chowstatic.com/assets/2015/09/30300_mario_batali.jpg",
+    "bio": "Mario Batali is an American chef, restaurateur, and writer. He is known for his Italian-American cuisine and has authored several cookbooks. Batali is the recipient of numerous awards for his culinary achievements.",
+    "likes": 18000,
+    "num_recipes": 50,
+    "experience": 30,
+    "recipes": [
+      {
+        "id": 1,
+        "chef_id": 2,
+        "name": "Pasta Carbonara",
+        "ingredients": [
+          "spaghetti",
+          "pancetta",
+          "pecorino romano cheese",
+          "egg yolks",
+          "salt",
+          "black pepper"
+        ],
+        "cooking_method": "1. Cook spaghetti according to package instructions. 2. Cut pancetta into small pieces and cook in a pan until crispy. 3. In a separate bowl, mix egg yolks, pecorino romano cheese, salt and black pepper. 4. Drain spaghetti and add to pan with pancetta. 5. Pour in egg mixture and toss until pasta is coated. Serve hot.",
+        "rating": 4.5,
+        "favorite": false
+      },
+      {
+        "id": 2,
+        "chef_id": 2,
+        "name": "Osso Buco",
+        "ingredients": [
+          "veal shanks",
+          "onion",
+          "carrot",
+          "celery",
+          "tomato sauce",
+          "white wine"
+        ],
+        "cooking_method": "1. Preheat oven to 350°F. 2. Season the veal shanks with salt and pepper. 3. In a Dutch oven, heat some oil and brown the veal shanks. 4. Remove the veal shanks from the Dutch oven and sauté the onion, carrot, and celery. 5. Add the tomato sauce and white wine. 6. Add the veal shanks back to the Dutch oven and bake for 2-3 hours. 7. Serve hot.",
+        "rating": 4.2,
+        "favorite": true
+      },
+      {
+        "id": 3,
+        "chef_id": 2,
+        "name": "Margherita Pizza",
+        "ingredients": [
+          "pizza dough",
+          "tomato sauce",
+          "mozzarella cheese",
+          "fresh basil",
+          "salt",
+          "olive oil"
+        ],
+        "cooking_method": "1. Preheat the oven to 450°F. 2. Roll out the pizza dough on a floured surface. 3. Spread the tomato sauce on top of the dough. 4. Add slices of mozzarella cheese on top of the tomato sauce. 5. Season with salt and drizzle with olive oil. 6. Bake in the oven for 10-12 minutes or until the crust is golden brown. 7. Top with fresh basil before serving.",
+        "rating": 4.8,
+        "favorite": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Lidia Bastianich",
+    "picture": "https://www.lidiasitaly.com/wp-content/uploads/2019/09/2019-lidia-bastianich-website-image.jpg",
+    "bio": "Lidia Bastianich is an Italian-American chef, restaurateur, and television host. She is the owner of several restaurants and has authored several cookbooks. Bastianich's cooking style is rooted in traditional Italian cuisine.",
+    "likes": 22000,
+    "num_recipes": 65,
+    "experience": 40,
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Spaghetti alle Vongole",
+        "ingredients": [
+          "1 pound spaghetti",
+          "3 dozen littleneck clams",
+          "1/4 cup extra-virgin olive oil",
+          "4 cloves garlic, peeled and thinly sliced",
+          "1/2 teaspoon peperoncino flakes",
+          "1/2 cup dry white wine",
+          "1/2 cup chopped fresh Italian parsley"
+        ],
+        "cooking_method": "Bring a large pot of salted water to a boil. Add the spaghetti and cook until al dente, about 8 minutes. Meanwhile, scrub the clams under cold running water. In a large sauté pan, heat the olive oil over medium heat. Add the garlic and peperoncino and cook until the garlic is fragrant and lightly golden, about 2 minutes. Add the clams and white wine, cover the pan, and cook until the clams open, 5 to 7 minutes. Discard any clams that do not open. Drain the spaghetti and add it to the pan with the clams. Add the parsley and toss to combine. Serve hot.",
+        "rating": 4.5,
+        "favorite": false
+      },
+      {
+        "id": 2,
+        "name": "Osso Buco",
+        "ingredients": [
+          "4 veal shanks, about 1 1/2 inches thick",
+          "Salt and freshly ground black pepper",
+          "1/2 cup all-purpose flour, for dredging",
+          "1/2 cup vegetable oil",
+          "1 onion, chopped",
+          "1 carrot, chopped",
+          "1 celery stalk, chopped",
+          "4 garlic cloves, chopped",
+          "1 tablespoon tomato paste",
+          "1 1/2 cups chicken stock",
+          "1 1/2 cups dry white wine",
+          "3 tablespoons chopped fresh parsley leaves",
+          "1 tablespoon chopped fresh rosemary leaves",
+          "1 tablespoon chopped fresh thyme leaves",
+          "1 bay leaf"
+        ],
+        "cooking_method": "Preheat the oven to 375 degrees F. Season the veal shanks with salt and pepper. Dredge the shanks in the flour to coat lightly. In a large Dutch oven or other heavy ovenproof pot, heat the vegetable oil over medium-high heat. Add the shanks and brown on all sides, about 8 minutes. Remove the shanks and set aside. Add the onion, carrot, celery, and garlic to the pot and sauté until the vegetables are tender and golden brown, about 10 minutes. Stir in the tomato paste and cook for 2 minutes longer. Add the chicken stock and wine and bring to a boil. Return the shanks to the pot and spoon some of the vegetable mixture over them. Add the parsley, rosemary, thyme, and bay leaf. Cover the pot and transfer to the oven. Bake until the meat is falling off the bone and the sauce is thickened, about 2 hours. Remove the bay leaf before serving.",
+        "rating": 4.7,
+        "favorite": false
+      },
+      {
+        "id": 3,
+        "name": "Risotto with Asparagus and Prosciutto",
+        "ingredients": [
+          "1 lb. fresh asparagus",
+          "5 to 6 cups chicken or vegetable stock",
+          "1/4 cup extra-virgin olive oil",
+          "1/4 lb. prosciutto, diced",
+          "1 small onion, chopped (about 1 cup)",
+          "2 cups Arborio or Carnaroli rice",
+          "1/2 cup dry white wine",
+          "1/2 cup freshly grated Parmigiano-Reggiano cheese",
+          "4 tbsp. unsalted butter",
+          "Salt and freshly ground black pepper"
+        ],
+        "cooking_method": [
+          "Cut off the tough bottom ends of the asparagus and discard.",
+          "Cut the tender stems and tips into 1-inch pieces and reserve.",
+          "In a medium saucepan, bring the stock to a simmer.",
+          "In a large skillet or sauté pan, heat the olive oil over medium heat until hot but not smoking.",
+          "Add the prosciutto and sauté for about 2 minutes, until lightly browned.",
+          "Add the onion and cook until it is translucent, about 5 minutes.",
+          "Add the rice and stir to coat it with the oil and juices in the pan, toasting it for a minute or two until it begins to smell nutty.",
+          "Add the wine and cook until it is nearly evaporated.",
+          "Add a ladleful of hot stock to the rice and cook, stirring, until it has been absorbed.",
+          "Continue adding hot stock, a ladleful at a time, stirring and letting each addition be absorbed before adding the next.",
+          "After 10 minutes, add the asparagus stems to the rice.",
+          "When the rice is cooked, but still has some bite to it (about 18 to 20 minutes total), stir in the asparagus tips.",
+          "Remove from heat, stir in the cheese and butter until melted and combined.",
+          "Season with salt and pepper to taste."
+        ],
+        "rating": 4.8,
+        "is_favorite": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Massimo Bottura",
+    "picture": "https://static01.nyt.com/images/2016/01/20/dining/20BOTTURA1/20BOTTURA1-superJumbo.jpg",
+    "bio": "Massimo Bottura is an Italian chef and owner of Osteria Francescana, a three-Michelin-starred restaurant in Modena, Italy. He is known for his innovative and avant-garde approach to Italian cuisine.",
+    "likes": 27000,
+    "num_recipes": 40,
+    "experience": 30,
+    "recipes": [
+      {
+        "name": "Parmigiano Reggiano Five Ways",
+        "ingredients": [
+          "100g Parmigiano Reggiano cheese",
+          "1 tbsp. balsamic vinegar",
+          "2 tbsp. honey",
+          "1 pear, sliced",
+          "2 cups arugula",
+          "Salt and pepper to taste"
+        ],
+        "cooking_method": "1. Preheat the oven to 350°F. 2. Grate the Parmigiano Reggiano cheese and shape into five small rounds. 3. Bake the cheese rounds on a baking sheet for 10 minutes or until golden and crispy. 4. In a small bowl, whisk together the balsamic vinegar and honey. 5. Arrange the sliced pear and arugula on a serving platter. 6. Top with the Parmigiano Reggiano rounds and drizzle with the balsamic-honey mixture. 7. Season with salt and pepper to taste. 8. Serve immediately.",
+        "rating": 4.8,
+        "favorite": false
+      },
+      {
+        "name": "Squash and Parmesan Soup",
+        "ingredients": [
+          "1 butternut squash",
+          "1 onion, chopped",
+          "2 garlic cloves, minced",
+          "4 cups vegetable or chicken broth",
+          "1 cup grated Parmesan cheese",
+          "2 tbsp olive oil",
+          "1/4 tsp ground nutmeg",
+          "Salt and pepper, to taste"
+        ],
+        "cooking_method": "1. Preheat oven to 400 degrees F (200 degrees C).\n2. Cut squash in half lengthwise, and scoop out seeds.\n3. Brush squash halves with olive oil, and place cut side down on a baking sheet.\n4. Roast for 45-50 minutes, or until tender.\n5. Meanwhile, in a large pot, heat olive oil over medium heat.\n6. Add onion and garlic, and cook until softened.\n7. Add broth and nutmeg, and bring to a simmer.\n8. Scoop out squash flesh, and add it to the pot.\n9. Simmer for 10-15 minutes.\n10. Using an immersion blender or transferring the soup to a blender, puree soup until smooth.\n11. Add Parmesan cheese and stir until melted.\n12. Season with salt and pepper to taste.",
+        "rating": 4.5,
+        "favorite": false
+      },
+      {
+  "name": "Spaghetti with Clams and Bottarga",
+  "ingredients": [
+    "1 pound spaghetti",
+    "2 tbsp. olive oil",
+    "4 garlic cloves, sliced",
+    "1 tsp. red pepper flakes",
+    "1 cup dry white wine",
+    "2 dozen littleneck clams, scrubbed and rinsed",
+    "1/2 cup grated bottarga",
+    "Salt and pepper to taste"
+  ],
+  "cooking_method": "1. Cook the spaghetti in salted boiling water until al dente. \n2. In a large skillet, heat the olive oil over medium heat. \n3. Add the garlic and red pepper flakes and sauté until fragrant. \n4. Add the white wine and clams and cover the skillet. \n5. Cook until the clams open, about 5 minutes. \n6. Remove the clams from the skillet and set aside. \n7. Add the cooked spaghetti to the skillet and toss with the sauce. \n8. Add the grated bottarga and toss again. \n9. Season with salt and pepper to taste. \n10. Serve the spaghetti topped with the clams and additional grated bottarga, if desired.",
+  "rating": 4.9,
+  "favorite": true
+}
+
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Gennaro Contaldo",
+    "picture": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/chef-image/gennaro_contaldo.png?itok=5OwceKd7",
+    "bio": "Gennaro Contaldo is an Italian chef and restaurateur based in London. He is known for his rustic Italian cooking style and has appeared on several cooking shows, including Jamie Oliver's Food Tube.",
+    "likes": 15000,
+    "num_recipes": 30,
+    "experience": 50,
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Linguine with Shrimp and Lemon Oil",
+        "ingredients": [
+          "1 pound linguine pasta",
+          "1/4 cup extra-virgin olive oil",
+          "1/4 cup lemon juice",
+          "2 cloves garlic, minced",
+          "1 pound large shrimp, peeled and deveined"
+        ],
+        "cooking_method": "Cook the linguine in salted boiling water until al dente. Meanwhile, heat the olive oil in a large skillet over medium heat. Add the garlic and cook until fragrant, about 1 minute. Add the shrimp and cook until pink and cooked through, about 2-3 minutes per side. Remove from heat and stir in the lemon juice. Drain the linguine and add to the skillet with the shrimp and lemon oil. Toss to combine and serve.",
+        "rating": 4.5,
+        "favorite": false
+      },
+      {
+        "id": 2,
+        "name": "Pesto Lasagna Roll-Ups",
+        "ingredients": [
+          "12 lasagna noodles",
+          "2 cups fresh basil leaves",
+          "1/2 cup grated Parmesan cheese",
+          "1/2 cup pine nuts",
+          "2 cloves garlic"
+        ],
+        "cooking_method": "Preheat the oven to 375°F. Cook the lasagna noodles according to package instructions. Meanwhile, in a food processor, combine the basil, Parmesan, pine nuts, and garlic. Pulse until finely chopped. Spread the pesto over each cooked lasagna noodle, then roll up tightly. Place the roll-ups seam-side down in a baking dish. Bake for 20-25 minutes, until heated through and lightly browned on top.",
+        "rating": 4.8,
+        "favorite": true
+      },
+      {
+        "id": 3,
+        "name": "Tiramisu",
+        "ingredients": [
+          "6 egg yolks",
+          "3/4 cup white sugar",
+          "2/3 cup milk",
+          "1 1/4 cups heavy cream",
+          "1/2 teaspoon vanilla extract",
+          "1 pound mascarpone cheese",
+          "1/4 cup strong brewed coffee",
+          "2 tablespoons rum",
+          "24 ladyfingers",
+          "2 tablespoons unsweetened cocoa powder"
+        ],
+        "cooking_method": "1. In a medium saucepan, whisk together egg yolks and sugar until well blended. Whisk in milk and cook over low heat, stirring constantly, until mixture thickens and coats the back of a spoon, about 10 minutes. Remove from heat and allow to cool.\n2. In a large bowl, beat cream with vanilla until stiff peaks form. Whisk mascarpone into yolk mixture until smooth.\n3. In a small bowl, combine coffee and rum. Dip each ladyfinger into coffee mixture for only 5 seconds. Place soaked ladyfingers in a single layer in a 9x13 inch dish. Spread half of the mascarpone mixture over the ladyfingers, then repeat with another layer of ladyfingers and mascarpone mixture.\n4. Cover and refrigerate for at least 2 hours or overnight. Sprinkle cocoa on top just before serving.",
+        "rating": 4.8,
+        "favorite": false
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Carluccio Antonio",
+    "experience": "32 years",
+    "num_recipes": 78,
+    "likes": 950,
+    "picture": "https://images.unsplash.com/photo-1526454563818-07c2b137f9ce",
+    "bio": "Carluccio Antonio is an Italian chef, restaurateur and food expert, based in London. He has been working in the food industry for over 32 years, and has written 22 cookbooks. Antonio has also been the face of several BBC television shows on Italian cooking, and has won numerous awards for his contributions to the culinary world.",
+    "recipes": [
+      {
+        "id": 1,
+        "chef_id": 2,
+        "name": "Pasta Carbonara",
+        "ingredients": [
+          "spaghetti",
+          "pancetta",
+          "pecorino romano cheese",
+          "egg yolks",
+          "salt",
+          "black pepper"
+        ],
+        "cooking_method": "1. Cook spaghetti according to package instructions. 2. Cut pancetta into small pieces and cook in a pan until crispy. 3. In a separate bowl, mix egg yolks, pecorino romano cheese, salt and black pepper. 4. Drain spaghetti and add to pan with pancetta. 5. Pour in egg mixture and toss until pasta is coated. Serve hot.",
+        "rating": 4.5,
+        "favorite": false
+      },
+      {
+        "id": 2,
+        "chef_id": 2,
+        "name": "Osso Buco",
+        "ingredients": [
+          "veal shanks",
+          "onion",
+          "carrot",
+          "celery",
+          "tomato sauce",
+          "white wine"
+        ],
+        "cooking_method": "1. Preheat oven to 350°F. 2. Season the veal shanks with salt and pepper. 3. In a Dutch oven, heat some oil and brown the veal shanks. 4. Remove the veal shanks from the Dutch oven and sauté the onion, carrot, and celery. 5. Add the tomato sauce and white wine. 6. Add the veal shanks back to the Dutch oven and bake for 2-3 hours. 7. Serve hot.",
+        "rating": 4.2,
+        "favorite": true
+      },
+      {
+        "id": 3,
+        "chef_id": 2,
+        "name": "Margherita Pizza",
+        "ingredients": [
+          "pizza dough",
+          "tomato sauce",
+          "mozzarella cheese",
+          "fresh basil",
+          "salt",
+          "olive oil"
+        ],
+        "cooking_method": "1. Preheat the oven to 450°F. 2. Roll out the pizza dough on a floured surface. 3. Spread the tomato sauce on top of the dough. 4. Add slices of mozzarella cheese on top of the tomato sauce. 5. Season with salt and drizzle with olive oil. 6. Bake in the oven for 10-12 minutes or until the crust is golden brown. 7. Top with fresh basil before serving.",
+        "rating": 4.8,
+        "favorite": false
+      }
+    ]
+  }
+]
