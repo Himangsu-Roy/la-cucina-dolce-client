@@ -31,12 +31,14 @@ const Header = () => {
             <Link to="/blog">Blog</Link>
           </ul>
         </div>
-        <a
+        <Link to="/"
           className="btn btn-ghost normal-case text-xl"
           style={{ fontFamily: "Pacifico, cursive" }}
         >
           La Cucina Dolce
-        </a>
+        </Link>
+        
+        
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-9 font-[500]">
