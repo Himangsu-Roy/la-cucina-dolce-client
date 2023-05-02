@@ -1,4 +1,7 @@
 import React from "react";
+import { Rating } from "@smastrom/react-rating";
+
+import "@smastrom/react-rating/style.css";
 
 const SuperDelicious = () => {
   return (
@@ -11,8 +14,15 @@ const SuperDelicious = () => {
             src="https://fabrx.co/preview/tastebite/assets/images/menus/menu2.jpg"
             alt={""}
           />
+          <Rating
+            className="mt-2"
+            style={{ maxWidth: 150 }}
+            value={Rating}
+            readOnly
+          />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2 ">
+              {/* <Rating style={{ maxWidth: 150 }} value={Rating} readOnly /> */}
               Spinach and Cheese Pasta
             </div>
           </div>
@@ -23,6 +33,12 @@ const SuperDelicious = () => {
             src="https://fabrx.co/preview/tastebite/assets/images/menus/menu3.jpg"
             alt={""}
           />
+          <Rating
+            className="mt-2"
+            style={{ maxWidth: 150 }}
+            value={Rating}
+            readOnly
+          />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2 ">Fancy Glazed Dounts</div>
           </div>
@@ -32,6 +48,12 @@ const SuperDelicious = () => {
             className="w-full "
             src="https://fabrx.co/preview/tastebite/assets/images/menus/menu4.jpg"
             alt={""}
+          />
+          <Rating
+            className="mt-2"
+            style={{ maxWidth: 150 }}
+            value={Rating}
+            readOnly
           />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2 ">
