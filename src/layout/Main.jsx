@@ -6,6 +6,7 @@ import Header from "../components/Header/Header";
 import { Outlet } from "react-router-dom";
 import Chefs from "../components/Chefs/Chefs";
 import SuperDelicious from "../components/SuperDelicious/SuperDelicious";
+import PopularCategoris from "../components/PopularCategories/PopularCategoris";
 
 const Main = () => {
   return (
@@ -13,7 +14,8 @@ const Main = () => {
       <Header />
       <Banner />
       <Chefs />
-      <SuperDelicious />
+          <SuperDelicious />
+          <PopularCategoris/>
       {/* <Outlet /> */}
       <Footer />
     </div>

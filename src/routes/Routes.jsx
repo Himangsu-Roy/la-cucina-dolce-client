@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Chefs from "../components/Chefs/Chefs";
+import ErrorPage from "../components/ErrorPage/ErrorPage";
 // import Chefs from "../Chefs/Chefs";
 import Main from "../layout/Main";
 import Blog from "../pages/Blog/Blog";
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
     // element: <App></App>,
     element: <App></App>,
     loader: () => fetch("http://localhost:5000/chefs"),
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/chefs",
