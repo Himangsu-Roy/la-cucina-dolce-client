@@ -13,9 +13,9 @@ const Main = () => {
     <div className="max-w-[1280px] mx-auto">
       <Header />
       <Banner />
+      <SuperDelicious />
       <Chefs />
-          <SuperDelicious />
-          <PopularCategoris/>
+      <PopularCategoris />
       {/* <Outlet /> */}
       <Footer />
     </div>

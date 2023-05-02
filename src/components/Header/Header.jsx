@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import avater from "../../assets/avatar1.png";
+import ActiveLink from "../ActiveLink/ActiveLink";
 
 const Header = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 my-5">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -32,7 +33,7 @@ const Header = () => {
           </ul>
         </div>
         <Link to="/"
-          className="btn btn-ghost normal-case text-xl"
+          className="btn btn-ghost normal-case text-[32px]"
           style={{ fontFamily: "Pacifico, cursive" }}
         >
           La Cucina Dolce
@@ -41,9 +42,9 @@ const Header = () => {
         
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-9 font-[500]">
-          <Link to="/">Home</Link>
-          <Link to="/blog">Blog</Link>
+        <ul className="menu menu-horizontal px-1 gap-9 text-[18px] font-[600]">
+          <ActiveLink to="/">Home</ActiveLink>
+          <ActiveLink to="/blog">Blog</ActiveLink>
         </ul>
       </div>
       <div className="navbar-end">

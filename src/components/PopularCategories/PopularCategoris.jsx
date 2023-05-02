@@ -5,7 +5,7 @@ const PopularCategoris = () => {
     <div>
       <div className="mt-[40px] mb-8">
         <h1 className="text-[35px] font-[700] ml-5 mb-2">Popular Categories</h1>
-        <div className="flex flex-wrap justify-around">
+        <div className="flex flex-wrap justify-around text-[18px] font-[700]">
           <div className="">
             <figure className="my-3 text-center tstbite-card">
               <a
