@@ -6,20 +6,19 @@ import ErrorPage from "../components/ErrorPage/ErrorPage";
 import Main from "../layout/Main";
 import Blog from "../pages/Blog/Blog";
 import Login from "../pages/Login/Login";
+import Recipes from "../pages/Recipes/Recipes";
+import Register from "../pages/Register/Register";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    // element: <App></App>,
     element: <App></App>,
     loader: () => fetch("http://localhost:5000/chefs"),
     errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "/chefs",
-        element: <Chefs></Chefs>,
-      },
-    ],
+  },
+  {
+    path: "/recipes/:id",
+    element: <Recipes></Recipes>,
   },
   {
     path: "/blog",
@@ -28,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login></Login>,
+  },
+  {
+    path: "/register",
+    element: <Register></Register>,
   },
 ]);
 
