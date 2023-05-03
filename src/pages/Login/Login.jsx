@@ -8,9 +8,7 @@ const Login = () => {
   return (
     <div>
       <Header></Header>
-      <div className="">
         <LoginForm></LoginForm>
-      </div>
       <Footer></Footer>
     </div>
   );
