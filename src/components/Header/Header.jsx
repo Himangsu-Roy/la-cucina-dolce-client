@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import avater from "../../assets/avatar1.png";
+import { AuthContex } from "../../contexts/AuthProvider";
 import ActiveLink from "../ActiveLink/ActiveLink";
 
 const Header = () => {
+  const { logOut } = useContext(AuthContex);
+
+  const handleLogOut = () => {
+    logOut();
+  };
+
   return (
     <div className="navbar bg-base-100 my-5">
       <div className="navbar-start">
@@ -32,14 +39,13 @@ const Header = () => {
             <Link to="/blog">Blog</Link>
           </ul>
         </div>
-        <Link to="/"
+        <Link
+          to="/"
           className="btn btn-ghost normal-case text-[32px]"
           style={{ fontFamily: "Pacifico, cursive" }}
         >
           La Cucina Dolce
         </Link>
-        
-        
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-9 text-[18px] font-[600]">
@@ -60,7 +66,9 @@ const Header = () => {
           >
             <li>
               <Link to="/login">Login</Link>
-              <Link to="/login">Logout</Link>
+              <Link onClick={handleLogOut} to="/login">
+                Logout
+              </Link>
             </li>
           </ul>
         </div>

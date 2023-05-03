@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContex } from "../contexts/AuthProvider";
 
 const RegisterForm = () => {
@@ -8,6 +8,7 @@ const RegisterForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [photoUrl, setPhotoUrl] = useState("");
+  const navigate = useNavigate();
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -24,6 +25,7 @@ const RegisterForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     createUser(email, password)
       .then((result) => {
         const createdUser = result.user;
@@ -32,21 +34,22 @@ const RegisterForm = () => {
           photoURL: photoUrl,
         })
           .then(() => {
-            console.log("Profile updated successfully");
+            navigate("/");
+            console.log("User Profile Updated");
           })
           .catch((error) => {
             console.log("Error updating profile: ", error);
           });
-          console.log(createdUser)
+        console.log(createdUser);
       })
       .catch((error) => {
         console.log(error);
       });
 
-      setName("");
-      setEmail("");
-      setPassword("");
-      setPhotoUrl("");
+    setName("");
+    setEmail("");
+    setPassword("");
+    setPhotoUrl("");
   };
 
   return (

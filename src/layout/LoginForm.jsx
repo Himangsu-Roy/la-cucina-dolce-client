@@ -1,11 +1,15 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContex } from "../contexts/AuthProvider";
 
 const LoginForm = () => {
   const { signIn, signInWithGoogle, signInWithGithub } = useContext(AuthContex);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const from = location.state?.from?.pathname || "/";
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -20,6 +24,7 @@ const LoginForm = () => {
       .then((result) => {
         const loggedUser = result.user;
         console.log(loggedUser);
+        navigate(from, {replace: true});
       })
       .catch((error) => {
         console.log(error);
@@ -30,11 +35,11 @@ const LoginForm = () => {
 
   const handleGoogleSignIn = () => {
     signInWithGoogle();
-    };
-    
-    const handleGithubSignIn = () => {
-        signInWithGithub()
-    }
+  };
+
+  const handleGithubSignIn = () => {
+    signInWithGithub();
+  };
 
   return (
     <div>
