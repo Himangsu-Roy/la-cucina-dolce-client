@@ -20,7 +20,7 @@ const ChefCard = ({ chef }) => {
           to={`/recipes/${id}`}
           className="flex justify-center mt-20 text-[16px] font-[600]"
         >
-          <button className="mb-5 bg-[#BDD6DD] py-3 px-5 rounded absolute bottom-0">
+          <button className="mb-5 bg-[#FBC278] py-3 px-5 rounded absolute bottom-0">
             View Recipes
           </button>
         </Link>
