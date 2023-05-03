@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const LoginForm = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+      e.preventDefault();
+      
+  };
+
   return (
     <div>
       <section>
@@ -11,7 +26,7 @@ const LoginForm = () => {
               <h2 className="text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl">
                 Sign in
               </h2>
-              <p className="mt-2 text-base text-gray-600 dark:text-gray-300">
+              <p className="mt-2 text-base text-gray-600 dark:text-gray-500">
                 Don&apos;t have an account?{" "}
                 <Link
                   to="/register"
@@ -22,7 +37,7 @@ const LoginForm = () => {
                 </Link>
               </p>
 
-              <form action="#" className="mt-8">
+              <form onSubmit={handleSubmit} className="mt-8">
                 <div className="space-y-5">
                   <div>
                     <label
@@ -38,7 +53,10 @@ const LoginForm = () => {
                         type="email"
                         placeholder="Email"
                         id="email"
+                        name="email"
+                        value={email}
                         required
+                        onChange={handleEmailChange}
                       ></input>
                     </div>
                   </div>
@@ -68,6 +86,9 @@ const LoginForm = () => {
                         type="password"
                         placeholder="Password"
                         id="password"
+                        name="password"
+                        value={password}
+                        onChange={handlePasswordChange}
                         required
                       ></input>
                     </div>
@@ -75,7 +96,7 @@ const LoginForm = () => {
 
                   <div>
                     <button
-                      type="button"
+                      type="submit"
                       className="inline-flex w-full items-center justify-center rounded-md bg-indigo-600 px-3.5 py-2.5 text-base font-semibold leading-7 text-white hover:bg-indigo-500"
                     >
                       Login

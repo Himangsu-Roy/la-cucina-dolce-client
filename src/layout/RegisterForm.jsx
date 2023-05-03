@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const RegisterForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [photoUrl, setPhotoUrl] = useState("");
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
+  const handleEmailChange = (e) => {
+      setEmail(e.target.value)
+  }
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+  const handlePhotoUrlChange = (e) => {
+    setPhotoUrl(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(name, email, password, photoUrl);
+  };
+
   return (
     <div>
       <section>
@@ -11,7 +34,7 @@ const RegisterForm = () => {
               <h2 className="text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl">
                 Sign Up
               </h2>
-              <p className="mt-2 text-base text-gray-600 dark:text-gray-300">
+              <p className="mt-2 text-base text-gray-600 dark:text-gray-400">
                 Already have an account?{" "}
                 <Link
                   to="/login"
@@ -22,7 +45,7 @@ const RegisterForm = () => {
                 </Link>
               </p>
 
-              <form action="#" method="POST" className="mt-8">
+              <form onSubmit={handleSubmit} className="mt-8">
                 <div className="space-y-5">
                   <div>
                     <label
@@ -38,6 +61,10 @@ const RegisterForm = () => {
                         type="text"
                         placeholder="Enter You Full Name"
                         id="name"
+                        value={name}
+                        name="name"
+                        required
+                        onChange={handleNameChange}
                       ></input>
                     </div>
                   </div>
@@ -56,6 +83,10 @@ const RegisterForm = () => {
                         type="email"
                         placeholder="Enter Your Email"
                         id="email"
+                        value={email}
+                        name="email"
+                        required
+                        onChange={handleEmailChange}
                       ></input>
                     </div>
                   </div>
@@ -74,6 +105,10 @@ const RegisterForm = () => {
                         type="password"
                         placeholder="Enter Your Password"
                         id="password"
+                        value={password}
+                        name="password"
+                        required
+                        onChange={handlePasswordChange}
                       ></input>
                     </div>
                   </div>
@@ -91,14 +126,17 @@ const RegisterForm = () => {
                         className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent py-2 px-3 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-500 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
                         type="text"
                         placeholder="Enter Your Photo URL"
-                        id="photo"
+                        id="photoUrl"
+                        value={photoUrl}
+                        name="photoUrl"
+                        onChange={handlePhotoUrlChange}
                       ></input>
                     </div>
                   </div>
 
                   <div>
                     <button
-                      type="button"
+                      type="submit"
                       className="inline-flex w-full items-center justify-center rounded-md bg-indigo-600 px-3.5 py-2.5 text-base font-semibold leading-7 text-white hover:bg-indigo-500"
                     >
                       Register

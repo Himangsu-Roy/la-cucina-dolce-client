@@ -16,7 +16,6 @@ const Main = () => {
       <SuperDelicious />
       <Chefs />
       <PopularCategoris />
-      {/* <Outlet /> */}
       <Footer />
     </div>
   );

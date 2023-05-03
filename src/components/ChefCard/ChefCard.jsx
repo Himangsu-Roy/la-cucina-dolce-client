@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ChefCard = ({ chef }) => {
   const { id, image, name, experience, recipes, likes } = chef;
@@ -17,7 +17,7 @@ const ChefCard = ({ chef }) => {
         <p className="text-gray-700 text-base mb-2">Likes: {likes}</p>
 
         <Link
-          to={`recipes/${id}`}
+          to={`/recipes/${id}`}
           className="flex justify-center mt-20 text-[16px] font-[600]"
         >
           <button className="mb-5 bg-[#BDD6DD] py-3 px-5 rounded absolute bottom-0">
