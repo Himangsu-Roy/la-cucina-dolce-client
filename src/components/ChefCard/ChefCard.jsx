@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ChefCard = ({ chef }) => {
   const { id, image, name, experience, recipes, likes } = chef;
   return (
     <div className="max-w-xs rounded overflow-hidden shadow-lg m-4 lg:col-span-3 md:col-span-6 sm:col-span-6 col-span-full relative">
-      <img className="w-full " src={image} alt={name} />
+      <LazyLoadImage className="w-full" src={image} alt={name} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2 ">{name}</div>
         <p className="text-gray-700 text-base mb-2">

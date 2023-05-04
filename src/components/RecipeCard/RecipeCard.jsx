@@ -4,7 +4,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 const RecipeCard = ( {recipe} ) => {
   //   const { name, rating, ingredients, cooking_method } = recipe;
-    console.log(recipe);
     const [isFavorite, setIsFavorite] = useState(false);
 
     const handleFavoriteClick = () => {
@@ -42,7 +41,7 @@ const RecipeCard = ( {recipe} ) => {
         <button
           onClick={handleFavoriteClick}
           disabled={isFavorite}
-          className="bg-blue-500 hover:bg-blue-700 mx-auto mt-3 text-white font-bold py-2 px-4 rounded"
+          className="bg-[#FBC278] hover:bg-[#f9a83f] mx-auto mt-3 text-black font-bold py-2 px-4 rounded"
         >
           {isFavorite ? "Added to favorites!" : "Add to favorites"}
         </button>

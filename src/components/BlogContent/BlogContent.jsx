@@ -4,14 +4,14 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 function BlogContent({ posts }) {
-
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      {posts.map((post) => (
-        <>
+      {posts.map((post, idx) => (
+        <div key={idx}>
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             {post.title}
           </h2>
+
           <div
             className="prose"
             dangerouslySetInnerHTML={{ __html: post.text }}
@@ -23,7 +23,7 @@ function BlogContent({ posts }) {
               </SyntaxHighlighter>
             </code>
           </pre>
-        </>
+        </div>
       ))}
     </div>
   );

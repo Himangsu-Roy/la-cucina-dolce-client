@@ -14,8 +14,10 @@ const Main = () => {
       <Header />
       <Banner />
       <SuperDelicious />
-      <Chefs />
       <PopularCategoris />
+      <div className="mb-10">
+        <Chefs />
+      </div>
       <Footer />
     </div>
   );

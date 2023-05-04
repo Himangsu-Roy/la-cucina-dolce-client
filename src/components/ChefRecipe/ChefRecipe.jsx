@@ -1,19 +1,21 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import RecipeCard from "../RecipeCard/RecipeCard";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ChefRecipe = () => {
   const chef = useLoaderData();
-  console.log(chef.name);
-  console.log(chef);
+  
   return (
     <div className="container mx-auto px-4">
       <div className="flex flex-col md:flex-row md:items-center mt-10">
-        <img
+
+        <LazyLoadImage
           src={chef.picture}
           alt={chef.name}
           className="w-full md:w-1/3 md:mr-8 rounded-lg"
         />
+
         <div className="md:w-2/3">
           <h1 className="text-3xl font-bold mb-2">{chef.name}</h1>
           <p className="text-lg mb-4">{chef.bio}</p>
@@ -27,7 +29,9 @@ const ChefRecipe = () => {
         </div>
       </div>
       <div className="mt-12">
-        <h1 className="flex justify-center mb-4 text-[20px] underline font-[600]">Recipes</h1>
+        <h1 className="flex justify-center mb-4 text-[20px] underline font-[600]">
+          Recipes
+        </h1>
         <div className="flex flex-col md:flex-row ">
           {chef.recipes.map((recipe) => (
             <div key={recipe.id} className="md:w-1/3 md:px-4 mb-8">

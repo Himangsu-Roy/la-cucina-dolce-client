@@ -7,36 +7,37 @@ const Footer = () => {
       <div>
         <Link
           to="/"
-          className="btn btn-ghost normal-case text-xl"
+          className="btn btn-ghost normal-case text-2xl"
           style={{ fontFamily: "Pacifico, cursive" }}
         >
           La Cucina Dolce
         </Link>
-        <p>
-          ACME Industries Ltd.
-          <br />
-          Providing reliable tech since 1992
+        <p className="max-w-sm">
+          On the other hand, we denounce with righteous indignation and dislike
+          men who are so beguiled and demoralized by the charms of pleasure of
+          the moment
         </p>
       </div>
+
       <div>
-        <span className="footer-title">Services</span>
-        <a className="link link-hover">Branding</a>
-        <a className="link link-hover">Design</a>
-        <a className="link link-hover">Marketing</a>
-        <a className="link link-hover">Advertisement</a>
-      </div>
-      <div>
-        <span className="footer-title">Company</span>
+        <span className="footer-title">La Cucina Dolce</span>
         <a className="link link-hover">About us</a>
         <a className="link link-hover">Contact</a>
         <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
+        <a className="link link-hover">Feedback</a>
       </div>
       <div>
         <span className="footer-title">Legal</span>
         <a className="link link-hover">Terms of use</a>
         <a className="link link-hover">Privacy policy</a>
         <a className="link link-hover">Cookie policy</a>
+      </div>
+      <div>
+        <span className="footer-title">Follow</span>
+        <a className="link link-hover">Facebook</a>
+        <a className="link link-hover">Twitter</a>
+        <a className="link link-hover">Instagram</a>
+        <a className="link link-hover">Youtube</a>
       </div>
     </footer>
   );

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import avater from "../../assets/avatar1.png";
+
+
 import { AuthContex } from "../../contexts/AuthProvider";
 import ActiveLink from "../ActiveLink/ActiveLink";
 
@@ -41,42 +42,49 @@ const Header = () => {
         </div>
         <Link
           to="/"
-          className="btn btn-ghost normal-case text-[32px]"
+          className="btn btn-ghost normal-case md:text-[32px] text-[25px] pl-0 md:pl-[16px]"
           style={{ fontFamily: "Pacifico, cursive" }}
         >
           La Cucina Dolce
         </Link>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-9 text-[18px] font-[600]">
+      <div className="navbar-center hidden lg:flex ">
+        <ul className="menu menu-horizontal px-1 md:gap-9 text-[18px] font-[600]">
           <ActiveLink to="/">Home</ActiveLink>
           <ActiveLink to="/blog">Blog</ActiveLink>
-          
         </ul>
       </div>
       <div className="navbar-end">
         <div className="dropdown dropdown-end">
-          {user ?
+          {user ? (
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                {user ? <img title={user.displayName} src={user.photoURL} /> : ""}
-              </div>
-            </label> :
-            <ActiveLink to="/login">Login</ActiveLink>}
-            <ul
-              tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li>
                 {user ? (
-                  <Link onClick={handleLogOut} to="/login">
-                    Logout
-                  </Link>
+                  <img title={user.displayName} src={user.photoURL} />
                 ) : (
-                  <Link to="/login">Login</Link>
+                  ""
                 )}
-              </li>
-            </ul>
+              </div>
+            </label>
+          ) : (
+            <div className="text-[18px] font-[600]">
+              <ActiveLink to="/login">Login</ActiveLink>
+            </div>
+          )}
+          <ul
+            tabIndex={0}
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              {user ? (
+                <Link onClick={handleLogOut} to="/login">
+                  Logout
+                </Link>
+              ) : (
+                <Link to="/login">Login</Link>
+              )}
+            </li>
+          </ul>
         </div>
       </div>
     </div>

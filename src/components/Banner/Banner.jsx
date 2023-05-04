@@ -12,11 +12,11 @@ const Banner = () => {
 
         <div className=" md:col-span-5 col-span-full bg-[#E4F1FF] ">
           <div className="h-full flex flex-col lg:justify-center md:justify-center ml-[30px] mr-[20px] mt-[30px] pb-[30px] md:mr-[30px] md:ml-[50px] lg:ml-[60px] lg:mr-[30px] ">
-            <strong>
+            {/* <strong>
               <span className=" ">85% would make this again</span>
-            </strong>
-            <h4 className="">Mighty Super Cheesecake</h4>
-            <p className=" ">
+            </strong> */}
+            <h4 className="font-[700] leading-tight text-[40px]">Mighty Super Cheesecake</h4>
+            <p className="text-[19px] mt-[15px]">
               Look no further for a creamy and ultra smooth classNameic
               cheesecake recipe! no one can deny its simple decadence.
             </p>
