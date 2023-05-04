@@ -26,6 +26,10 @@ const RegisterForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+      if (password.length < 7) {
+          return
+      }
+      
     createUser(email, password)
       .then((result) => {
         const createdUser = result.user;

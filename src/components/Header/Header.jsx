@@ -5,7 +5,7 @@ import { AuthContex } from "../../contexts/AuthProvider";
 import ActiveLink from "../ActiveLink/ActiveLink";
 
 const Header = () => {
-  const { logOut } = useContext(AuthContex);
+  const { logOut, user } = useContext(AuthContex);
 
   const handleLogOut = () => {
     logOut();
@@ -51,26 +51,32 @@ const Header = () => {
         <ul className="menu menu-horizontal px-1 gap-9 text-[18px] font-[600]">
           <ActiveLink to="/">Home</ActiveLink>
           <ActiveLink to="/blog">Blog</ActiveLink>
+          
         </ul>
       </div>
       <div className="navbar-end">
         <div className="dropdown dropdown-end">
-          <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-            <div className="w-10 rounded-full">
-              <img src={avater} />
-            </div>
-          </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            <li>
-              <Link to="/login">Login</Link>
-              <Link onClick={handleLogOut} to="/login">
-                Logout
-              </Link>
-            </li>
-          </ul>
+          {user ?
+            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+              <div className="w-10 rounded-full">
+                {user ? <img title={user.displayName} src={user.photoURL} /> : ""}
+              </div>
+            </label> :
+            <ActiveLink to="/login">Login</ActiveLink>}
+            <ul
+              tabIndex={0}
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                {user ? (
+                  <Link onClick={handleLogOut} to="/login">
+                    Logout
+                  </Link>
+                ) : (
+                  <Link to="/login">Login</Link>
+                )}
+              </li>
+            </ul>
         </div>
       </div>
     </div>

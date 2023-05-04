@@ -1,12 +1,16 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import ChefRecipe from '../../components/ChefRecipe/ChefRecipe';
+import Footer from '../../components/Footer/Footer';
+import Header from '../../components/Header/Header';
 
 const Recipes = () => {
-    const  recipes  = useLoaderData();
-    console.log(recipes)
+    
     return (
         <div>
-            recipes
+            <Header></Header>
+            <ChefRecipe></ChefRecipe>
+            <Footer></Footer>
         </div>
     );
 }
